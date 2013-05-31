@@ -1,5 +1,6 @@
 h1. Archivehero
 
+built for GovHack Sydney 2013
 
 {:git=>true, :railsapps=>"rails3-bootstrap-devise-cancan", :database=>"sqlite", :unit_test=>"rspec", :integration=>"cucumber", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"gmail", :authentication=>"devise", :devise_modules=>"default", :authorization=>"cancan", :starter_app=>"admin_app", :form_builder=>"simple_form", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :dev_webserver=>"webrick", :templates=>"erb", :continuous_testing=>"guard", :rvmrc=>true, :jsruntime=>true}
 
@@ -57,7 +58,7 @@ If you add functionality to this application, create an alternative implementati
 
 h2. Credits
 
-djon3s and karwalski 
+djon3s and karwalski Thanks to Richard from State Records NSW and GovHack team and who ever provided the coffee. 
 
 h2. License
 
