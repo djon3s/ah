@@ -1,11 +1,6 @@
 Archivehero
 ========================
 
-This application was generated with the rails_apps_composer gem:
-https://github.com/RailsApps/rails_apps_composer
-provided by the RailsApps Project:
-http://railsapps.github.io/
-
 ________________________
 
 Recipes:
@@ -17,3 +12,4 @@ Preferences:
 ________________________
 
 License
+"Do what you feel as long as you don't build bombs."
