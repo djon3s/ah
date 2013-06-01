@@ -1,4 +1,7 @@
 Archivehero::Application.routes.draw do
+  resources :artifacts
+
+
   authenticated :user do
     root :to => 'home#index'
   end
