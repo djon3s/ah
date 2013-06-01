@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130531182714) do
+ActiveRecord::Schema.define(:version => 20130601045205) do
+
+  create_table "artifacts", :force => true do |t|
+    t.string   "title"
+    t.string   "link"
+    t.integer  "source_id"
+    t.text     "description"
+    t.string   "language"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "artifacts", ["source_id"], :name => "index_artifacts_on_source_id"
 
   create_table "roles", :force => true do |t|
     t.string   "name"
@@ -23,6 +35,16 @@ ActiveRecord::Schema.define(:version => 20130531182714) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], :name => "index_roles_on_name_and_resource_type_and_resource_id"
   add_index "roles", ["name"], :name => "index_roles_on_name"
+
+  create_table "sources", :force => true do |t|
+    t.string   "name"
+    t.string   "link"
+    t.text     "address"
+    t.string   "contact_url"
+    t.string   "api_url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
